@@ -1,3 +1,16 @@
+(6)
 make hello
 cc   hello.o   -o hello
 
+(7)
+gdb
+(gdb) file hello
+(gdb) break printf
+Note: breakpoint 1 also set at pc 0x38da24cf10.
+Breakpoint 2 at 0x38da24cf10
+
+(8)
+(gdb) r
+Starting program: /afs/asu.edu/users/n/j/m/njmurra1/hello
+Hello World!
+[Inferior 1 (process 17545) exited with code 015]
