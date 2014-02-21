@@ -1,14 +1,5 @@
 #include "common.h"
 
-// ToDo:  move these back to where they were !!!!!!!!!!!!!!!!!!
-static void print_page_header(char source_name[], char date[]);
-
-static void print_page_header(char source_name[], char date[]) {
-	static int page_number = 0;
-
-	/* Missing Code Here */
-}
-
 int main(int argc, const char *argv[]) {
 
 	FILE *source_file;

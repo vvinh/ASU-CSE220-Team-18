@@ -14,8 +14,8 @@
 #define DATE_STRING_LENGTH      26
 
 typedef enum {
-	FALSE, TRUE,
-} BOOLEAN;
+    FALSE, TRUE,
+}BOOLEAN;
 
 FILE *init_lister(const char *, char source_file_name[], char dte[]);
 BOOLEAN get_source_line(FILE *, char src_name[], char todays_date[]);
