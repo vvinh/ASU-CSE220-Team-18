@@ -73,10 +73,16 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[]) {
 		// use fgets to read line of text
 		fgets(source_buffer, MAX_SOURCE_LINE_LENGTH, src_file);
 
-		line_number++;  //inc line number by 1
+		//line_number++;  //inc line number by 1
 		// print source buffer into print buffer with line number
+<<<<<<< HEAD
 		sprintf(print_buffer, "%d%s%s", line_number, "  ", source_buffer);
 
+=======
+		//sprintf(print_buffer, "%d%s%s", line_number, "  ", source_buffer);
+		sprintf(print_buffer,"%s", source_buffer);
+		line_number++;
+>>>>>>> bb1a65224c6f99f52cd75601d4093c1fd4ddf224
 		// call the method to print a line
 		print_line(src_name, print_buffer, todays_date);
 		// return true to indicate success
