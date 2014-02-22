@@ -1,5 +1,5 @@
 #include "common.h"
-//2014.02.21.19
+//2014.02.21.20
 int main(int argc, const char *argv[]) {
 
 	FILE *source_file;
@@ -75,7 +75,7 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[]) {
 
 		line_number++;  //inc line number by 1
 		// print source buffer into print buffer with line number
-		sprintf(print_buffer, "%d%s%s", line_number, "  ", source_buffer);
+		sprintf(print_buffer, "%d%s%s", line_number, " : ", source_buffer);
 
 		// call the method to print a line
 		print_line(src_name, print_buffer, todays_date);
