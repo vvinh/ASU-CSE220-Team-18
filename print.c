@@ -13,21 +13,19 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
 	
 	if (++line_count > MAX_LINES_PER_PAGE) {
 		/* Missing Code Here */
-		print_page_header(source_name_to_print[], date_to_print[]);
+		print_page_header(source_name_to_print, date_to_print);
 	}
 	if (strlen(line) > MAX_PRINT_LINE_LENGTH) {
-		save_chp = (line + MAX_PRINT_LINE_LENGTH);
-		save_ch = *save_chp;
-		*save_chp = '10';		
-/* Missing Code Here */
+		save_ch = line[MAX_PRINT_LINE_LENGTH];
+		save_chp = line + MAX_PRINT_LINE_LENGTH;
+		line[MAX_PRINT_LINE_LENGTH] = '\0';		
+		/* Missing Code Here */
 	}
+	printf("%d%s%s", line_count, ": ", line);
+	/*Missing Code Here*/
 	if (save_chp) {
 		/* Missing Code Here */
-		
-	}
-	/* Missing Code Here */
-	if (save_chp) {
-		/* Missing Code Here */
+		*save_chp = save_ch;
 	}
 }
 static void print_page_header(char source_name[], char date[])
