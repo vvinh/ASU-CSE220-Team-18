@@ -10,7 +10,7 @@
 #define MAX_FILE_NAME_LENGTH    32
 #define MAX_SOURCE_LINE_LENGTH  256
 #define MAX_PRINT_LINE_LENGTH   80
-#define MAX_LINES_PER_PAGE      50
+#define MAX_LINES_PER_PAGE      50    // 50
 #define DATE_STRING_LENGTH      26
 
 typedef enum {
