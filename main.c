@@ -1,5 +1,5 @@
 #include "common.h"
-
+//2014.02.21.19
 int main(int argc, const char *argv[]) {
 
 	FILE *source_file;
@@ -34,8 +34,9 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[]) {
 	FILE *file;  // file pointer
 
 	/* Missing Code Here */
+	timer = time(NULL);
 
-	dte = timer;
+	strcpy(dte, ctime(&timer));
 
 	size_t i; // counter
 
@@ -75,8 +76,9 @@ BOOLEAN get_source_line(FILE *src_file, char src_name[], char todays_date[]) {
 		line_number++;  //inc line number by 1
 		// print source buffer into print buffer with line number
 		sprintf(print_buffer, "%d%s%s", line_number, "  ", source_buffer);
+
 		// call the method to print a line
-		print_line(print_buffer, print_buffer, todays_date);
+		print_line(src_name, print_buffer, todays_date);
 		// return true to indicate success
 		return (TRUE);
 	} else {
