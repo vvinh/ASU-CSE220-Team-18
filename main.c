@@ -34,8 +34,9 @@ FILE *init_lister(const char *name, char source_file_name[], char dte[]) {
 	FILE *file;  // file pointer
 
 	/* Missing Code Here */
+	timer = time(NULL);
 
-	dte = timer;
+	strcpy(dte, ctime(&timer));
 
 	size_t i; // counter
 
