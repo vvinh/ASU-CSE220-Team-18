@@ -27,7 +27,8 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
 	printf("%s", source_name_to_print);
 
 	
-	if (save_chp) {
+	if (save_chp)// Restore line to previous state before truncation
+	{
 		
 		*save_chp = save_ch;
 	}
