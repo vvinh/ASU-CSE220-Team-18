@@ -1,5 +1,8 @@
-hello: hello.o
-	gcc hello.o -o hello
+lister: main.o print.o
+	gcc -o lister main.o print.o
 
-hello.o: hello.c
-	gcc -c hello.c
+main.o: main.c
+	gcc -c -o main.o main.c
+
+print.o: print.c
+	gcc -c -o print.o print.c
