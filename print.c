@@ -19,30 +19,34 @@ void print_line(char line[], char source_name_to_print[], char date_to_print[])
 
 	
 	if (++line_count > MAX_LINES_PER_PAGE) {
-		/* Missing Code Here */
+		
 		print_page_header(line, date_to_print);
 		line_count = 1;
 	}
+	// If the length of the string is larger than the maximum allowed length
 	if (strlen(source_name_to_print) > MAX_PRINT_LINE_LENGTH) {
 		save_ch = source_name_to_print[MAX_PRINT_LINE_LENGTH];
+		// Save the character at the maximum allowed value.
 		save_chp = source_name_to_print + MAX_PRINT_LINE_LENGTH;
 		source_name_to_print[MAX_PRINT_LINE_LENGTH] = '\0';
-		/* Missing Code Here */
+		// Replace the character at the end with a null value.
+		
 	}
 
 	printf("%s", source_name_to_print);
 
-	/*Missing Code Here*/
-	if (save_chp) {
-		/* Missing Code Here */
+	
+	if (save_chp)// Restore line to previous state before truncation
+	{
+		
 		*save_chp = save_ch;
 	}
 }
 static void print_page_header(char source_name[], char date[])
 {
-	static int page_number = 0;
-	//Missing code here
+	static int page_number = 0;// Page number starts at page 0
+	
 	page_number++;
-	printf("Page\t%d\t%s\t%s\n", page_number, source_name, date);
+	printf("Page\t%d\t%s\t%s\n", page_number, source_name, date);// Prints the header message. Page number, name of the file, and the date is was created
 
 }
