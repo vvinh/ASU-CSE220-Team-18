@@ -1,3 +1,12 @@
+/********************************************
+*
+* CSE220 LS 12166 Lab2 Team18
+* Nicholas Murray
+* Vivian Vinh
+* Timothy Zamora
+*
+**********************************************/
+
 #ifndef CSE220_project2_common_h
 #define CSE220_project2_common_h
 

@@ -1,3 +1,12 @@
+/********************************************
+*
+* CSE220 LS 12166 Lab2 Team18
+* Nicholas Murray
+* Vivian Vinh
+* Timothy Zamora
+*
+**********************************************/
+
 #include "common.h"
 //2014.02.21.20
 int main(int argc, const char *argv[]) {
